@@ -12,7 +12,7 @@ def parse_http_request(request_text):
     if not host:
         raise ValueError("Host not found in request")
     # Build full URL
-    scheme = 'https'  # Assume HTTPS for secure endpoints like ICBS
+    scheme = 'https'  
     url = f"{scheme}://{host}{path}"
     # Extract headers
     headers = {}
